@@ -1,0 +1,17 @@
+name: Check product book
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate pages and generated book
+        shell: pwsh
+        run: ./tools/Test-Book.ps1

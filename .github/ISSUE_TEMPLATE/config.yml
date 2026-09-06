@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Открытые продуктовые вопросы
+    url: https://github.com/Alvatune/Interlink-product-book-RU/blob/main/book/Open-questions.md
+    about: Выберите тематический вопрос, если хотите дополнить требования и практику предприятий.
+  - name: Как присоединиться к диалогу
+    url: https://github.com/Alvatune/Interlink-product-book-RU/blob/main/book/How-to-participate.md
+    about: Рекомендации по подготовке полезного и безопасного примера.

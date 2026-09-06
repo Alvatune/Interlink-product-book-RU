@@ -1,0 +1,60 @@
+name: Обязательный сценарий
+description: Опишите задачу пользователя, условия её выполнения и результат, который должен обеспечить Interlink.
+title: "[Пользовательский сценарий] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за предметный пример. Не публикуйте закрытые данные предприятия, обозначения изделий, персональные данные, адреса внутренних систем и файлы с ограниченным доступом.
+  - type: textarea
+    id: task
+    attributes:
+      label: Пользователь и его задача
+      description: Кто выполняет работу и какого результата он добивается?
+      placeholder: Например, конструктор формирует состав насосной станции для заказа с заданным климатическим исполнением.
+    validations:
+      required: true
+  - type: textarea
+    id: conditions
+    attributes:
+      label: Существенные исходные условия
+      description: Укажите версии, серию, дату, заказ, роль, прикладной модуль и другие условия, влияющие на результат.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Какой сценарий требуется покрыть
+      description: Опишите последовательность действий и итог, который видит пользователь.
+    validations:
+      required: true
+  - type: textarea
+    id: exceptions
+    attributes:
+      label: Исключения и ошибки
+      description: Когда правило действует иначе, что блокирует работу и кто принимает решение?
+  - type: textarea
+    id: must_keep
+    attributes:
+      label: Что нельзя потерять в Interlink
+      description: Сформулируйте обязательный пользовательский результат, а не название внутреннего механизма.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Как проверить ожидаемый результат
+      description: Какой обезличенный пример или ожидаемый результат докажет, что сценарий выполнен правильно?
+    validations:
+      required: true
+  - type: dropdown
+    id: criticality
+    attributes:
+      label: Критичность
+      options:
+        - Без этого работа или выпуск невозможны
+        - Есть обходной путь с заметными потерями
+        - Улучшение удобства или прозрачности
+        - Пока не определено
+    validations:
+      required: true
